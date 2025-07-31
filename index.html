@@ -1,9 +1,70 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <title>My blog</title>
+    <meta name="description" content="Laura Garcia's Developer blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <div
+      class="background-video"
+      data-video-urls="https://rayofhours.netlify.app/assets/shadow.mp4"
+      data-autoplay="true"
+      data-loop="true"
+      data-wf-ignore="true"
+    >
+      <video
+        muted="true"
+        autoplay="true"
+        loop="true"
+        style="
+          background-image: url('https://rayofhours.netlify.app/assets/thumbnail.webp');
+        "
+        playsinline=""
+        data-wf-ignore="true"
+      >
+        <source
+          src="https://rayofhours.netlify.app/assets/shadow.mp4"
+          data-wf-ignore="true"
+        />
+      </video>
+    </div>
+    <section class="hero-section section">
+      <div class="container">
+        <h1>My Dev Academy Blog</h1>
+        <p>
+          This page contains my blogs from my fullstack journey at the Dev
+          Academy. In this blog you will find:
+        </p>
+        <ul>
+          <li>Development reflections</li>
+          <li>Human skills reflections</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="blog-grid">
+        <a href="../blog/te-houtaewa-template.html" class="blog-card">
+          <div class="blog-img-wrapper">
+            <img class="blog-img" src="../assets/img/blog-1-thumbnail.jpg" />
+          </div>
+          <h2 class="blog-title">Te houtaewa</h2>
+          <p class="blog-paragraph">This is the article short description.</p>
+          <div class="blog-info">
+            <span class="blog-chip">1 min read</span>
+            <span class="blog-chip">26.06.2025</span>
+          </div>
+        </a>
+      </div>
+    </section>
   </body>
 </html>
