@@ -96,6 +96,10 @@ li {
   align-items: start;
 }
 
+.hero-paragraph {
+  padding-top: 0.5rem;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -223,6 +227,10 @@ li {
   .hero-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+  }
+
+  .hero-paragraph {
+    padding-top: 0rem;
   }
 
   .navbar-component {
