@@ -85,7 +85,7 @@ li {
   padding: 2rem 4rem;
 }
 
-.hero-section {
+#hero-section {
   padding-top: 8rem;
 }
 
@@ -192,10 +192,6 @@ li {
     padding: 2rem 2.5rem;
   }
 
-  .hero-section {
-    padding-top: 8rem;
-  }
-
   .navbar-component {
     padding: 1rem 2.5rem;
   }
@@ -222,10 +218,6 @@ li {
 
   .section {
     padding: 2rem 1.5rem;
-  }
-
-  .hero-section {
-    padding-top: 8rem;
   }
 
   .hero-grid {
@@ -260,9 +252,6 @@ li {
 
   .navbar-container {
     gap: 0.5rem;
-  }
-
-  .navbar-logo {
   }
 
   .navbar-link {
