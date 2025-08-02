@@ -15,6 +15,23 @@
   </head>
 
   <body>
+    <div class="navbar-component">
+      <div class="navbar-container container">
+        <img
+          class="navbar-logo"
+          src="../assets/img/logo.svg"
+          alt="laura garcia creative logo"
+        />
+        <ul class="navbar-links-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="../page/about.html">about</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div
       class="background-video-container"
       data-video-urls="https://rayofhours.netlify.app/assets/shadow.mp4"
@@ -40,23 +57,26 @@
       </video>
     </div>
     <section class="hero-section section">
-      <div class="container">
-        <h1>My Dev Academy Blog</h1>
-        <p>
-          This page contains my blogs from my fullstack journey at the Dev
-          Academy. In this blog you will find:
-        </p>
-        <ul>
-          <li>Development reflections</li>
-          <li>Human skills reflections</li>
-        </ul>
+      <div class="container hero-grid">
+        <h1>My Dev Blog</h1>
+        <div>
+          <p>
+            This page contains my blogs from my fullstack journey at the
+            DevAcademy. I will be writing about tech and human skills. <br />
+            Keep an eye out for regular updates.
+          </p>
+        </div>
       </div>
     </section>
     <section class="section">
       <div class="blog-grid container">
         <a href="../blog/te-houtaewa-template.html" class="blog-card">
           <div class="blog-img-wrapper">
-            <img class="blog-img" src="../assets/img/blog-1-thumbnail.jpg" />
+            <img
+              class="blog-img"
+              src="../assets/img/blog-1-thumbnail.jpg"
+              alt="image of a notebook"
+            />
           </div>
           <h2 class="blog-title">Te houtaewa</h2>
           <p class="blog-paragraph">This is the article short description.</p>
@@ -65,6 +85,26 @@
             <span class="blog-chip">26.06.2025</span>
           </div>
         </a>
+        <div class="blog-card">
+          <div class="blog-img-wrapper">
+            <img
+              class="blog-img"
+              src="../assets/img/blog-2-thumbnail.jpg"
+              alt="image of a screen with code"
+            />
+          </div>
+          <h2 class="blog-title">Other Article</h2>
+          <p class="blog-paragraph">Come back later for more articles.</p>
+          <div class="blog-info">
+            <span class="blog-chip">1 min read</span>
+            <span class="blog-chip">26.06.2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <p>&copy; 2025 Laura Garcia Creative. All rights reserved.</p>
       </div>
     </section>
   </body>

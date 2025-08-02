@@ -19,8 +19,6 @@ h1 {
   text-transform: uppercase;
   line-height: 97%;
   font-weight: 400;
-  padding-top: 0px;
-  padding-bottom: 2rem;
 }
 
 h2 {
@@ -50,12 +48,52 @@ li {
   font-weight: 400;
 }
 
+.navbar-component {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid #adadad;
+  background: rgba(222, 220, 218, 0.25);
+  backdrop-filter: blur(15px);
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  padding: 1rem 4rem;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-links-list {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 0px;
+}
+
+.navbar-link {
+  padding: 1rem 0.5rem;
+}
+
 .section {
   padding: 2rem 4rem;
 }
 
 .hero-section {
   padding-top: 8rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: start;
 }
 
 .container {
@@ -69,7 +107,7 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .blog-card {
@@ -134,7 +172,6 @@ li {
 @media only screen and (max-width: 990px) {
   h1 {
     font-size: 4rem;
-    padding-bottom: 1.5rem;
   }
 
   h2 {
@@ -155,11 +192,16 @@ li {
     padding: 2rem 2.5rem;
   }
 
+  .hero-section {
+    padding-top: 8rem;
+  }
+
+  .navbar-component {
+    padding: 1rem 2.5rem;
+  }
+
   .blog-grid {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    gap: 1.5rem;
   }
 
   .blog-card {
@@ -170,7 +212,6 @@ li {
 @media only screen and (max-width: 765px) {
   h1 {
     font-size: 3.5rem;
-    padding-bottom: 1.25rem;
   }
 
   h2 {
@@ -183,22 +224,32 @@ li {
     padding: 2rem 1.5rem;
   }
 
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
+  .hero-section {
+    padding-top: 8rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
 
+  .navbar-component {
+    padding: 1rem 1.5rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .blog-card {
-    padding: 1.125rem;
+    padding: 1rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   h1 {
     font-size: 2.5rem;
-    padding-bottom: 1.25rem;
   }
 
   h2 {
@@ -207,14 +258,18 @@ li {
     font-weight: 400;
   }
 
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, auto);
-    gap: 1.5rem;
+  .navbar-container {
+    gap: 0.5rem;
   }
 
-  .blog-card {
-    padding: 1.125rem;
+  .navbar-logo {
+  }
+
+  .navbar-link {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
