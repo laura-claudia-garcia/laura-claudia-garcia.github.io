@@ -9,6 +9,7 @@
   --color-green: #62685e;
   --color-dark-green: #293223;
   --color-light: #fffdfa;
+  --color-transparent: transparent;
 }
 
 * {
@@ -24,6 +25,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  color: var(--color-green);
 }
 
 h1,
@@ -77,7 +79,7 @@ input {
 
 .back-button {
   border: none;
-  background-color: transparent;
+  background-color: var(--color-transparent);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -170,8 +172,6 @@ input {
 .blog-card {
   border-radius: 1.5rem;
   border: 1px solid #adadad;
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(40px);
   display: flex;
   width: 100%;
   padding: 1.5rem;
@@ -196,7 +196,6 @@ input {
 
 .blog-paragraph {
   margin-bottom: 1rem;
-  color: #646663;
 }
 
 .background-video-container {
@@ -223,7 +222,7 @@ input {
 .blog-chip {
   padding: 0.5rem 0.75rem;
   border-radius: 6.25rem;
-  background: #ecedea;
+  background: #69746126;
 }
 
 .blog-link {
