@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Sigurd'; /* Choose a name for your font */
+  src: url('../assets/Sigurd.otf') format('otf-variations');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --color-green: #62685e;
+  --color-dark-green: #293223;
+  --color-light: #fffdfa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,32 +18,40 @@
 }
 
 body {
-  background-color: #fffdfa;
-  color: #293223;
+  background-color: var(--color-light);
+  color: var(--color-dark-green);
   font-family: Manrope, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Sigurd, 'Times New Roman', serif;
+  color: var(--color-green);
+  font-weight: 400;
+}
+
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   line-height: 97%;
-  font-weight: 400;
 }
 
 h2 {
   font-size: 1.5rem;
   letter-spacing: 0.015em;
-  font-weight: 400;
 }
 
 p {
   line-height: 150%;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 a {
@@ -98,6 +119,7 @@ input {
 
 .navbar-link {
   padding: 1rem 0.5rem;
+  font-family: Sigurd, 'Times New Roman', serif;
 }
 
 .section {
