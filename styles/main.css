@@ -209,6 +209,10 @@ input {
   flex-shrink: 0;
 }
 
+.blog-card:hover {
+  opacity: 100%;
+}
+
 .blog-img-wrapper {
   aspect-ratio: 16 / 9;
   width: 100%;
