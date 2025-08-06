@@ -63,12 +63,12 @@
           ><img src="../assets/img/arrow-left.svg" alt="arrow icon" />back to
           blog</a
         >
-        <div class="blog-content">
+        <div class="blog-content rich-text">
           <div class="blog-info margin-bottom-large">
             <span class="blog-chip">1 min read</span>
             <span class="blog-chip">04.08.2025</span>
           </div>
-          <h1 class="blog-title margin-bottom-medium">
+          <h1 class="blog-title">
             The difference between inline and inline-block
           </h1>
           <p>
@@ -77,9 +77,10 @@
             elements are set to display block by default, which makes the
             elements stack on top of one another, even if there is space next to
             them. They have a width of 100% per default and will not flow
-            horizontally even if the width is decreased. <br />
-            <br />
-            <strong>Inline:</strong> <br />
+            horizontally even if the width is decreased.
+          </p>
+          <h2>Inline:</h2>
+          <p>
             An element set to inline will only occupy the height and width of
             the element and the height and width properties will not have any
             effect. Contrary to the display block, inline does not force
@@ -87,13 +88,14 @@
             to the existing content horizontally. Vertical padding and margins
             does not affect the inline elements layout. Some elements are set to
             inline by default such as <a class="blog-link">anchors</a>,
-            <strong>bold text</strong>, <em>italic</em> and <span>spans</span>,
-            this is to ensure that text elements are aligned to each other and
-            do not have weird margins and heights affecting readability. It is
-            good to note that an element with display inline cannot contain
-            elements within it.<br />
-            <br />
-            <strong>Inline-block:</strong> <br />
+            <strong>bold text</strong>, <em>italic</em> and
+            <span class="text-color-black">spans</span>, this is to ensure that
+            text elements are aligned to each other and do not have weird
+            margins and heights affecting readability. It is good to note that
+            an element with display inline cannot contain elements within it.
+          </p>
+          <h2>Inline-block:</h2>
+          <p>
             An element set to inline-block will flow to the same line as other
             content, and will only occupy the height and width of the element
             (it does not default to 100%) similarly to inline. But these can
