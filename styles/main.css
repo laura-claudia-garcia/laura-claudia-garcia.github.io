@@ -267,6 +267,12 @@ input {
   margin: 0rem 0.125rem;
   border: none;
   cursor: pointer;
+  background-color: #69746126;
+  transition: ease-out all 200ms;
+}
+
+.blog-button:hover {
+  opacity: 70%;
 }
 
 .blog-container {
