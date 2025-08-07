@@ -297,10 +297,6 @@ button:hover {
   text-decoration: underline !important;
 }
 
-.blog-button:hover {
-  opacity: 70%;
-}
-
 .blog-container {
   justify-content: flex-start;
   align-items: start;
@@ -406,6 +402,9 @@ button:hover {
 
   .blog-title {
     font-size: 2rem;
+  }
+  .back-button {
+    position: static;
   }
 }
 
