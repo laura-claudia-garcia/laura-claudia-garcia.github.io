@@ -103,11 +103,15 @@ button {
   padding: 0.5rem 1rem;
   margin: 0rem 0.125rem;
   min-height: 2.5rem;
-  border: 1px dashed #69746180;
+  border: 1px solid #62685e4d;
   border-radius: 0.5rem;
   cursor: pointer;
   background-color: var(--color-transparent);
   transition: ease-out all 200ms;
+}
+
+button:hover {
+  border: 1px dashed var(--color-green);
 }
 
 .rich-text h1 {
