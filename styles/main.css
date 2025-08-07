@@ -83,13 +83,26 @@ li {
 }
 
 input {
+  background-color: var(--white);
+  color: var(--color-green);
   padding: 0.5rem 1rem;
-  border: none;
+  border: 1px solid #62685e4d;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  min-height: 2.5rem;
+  line-height: 100%;
+  transition: all 0.2s;
+}
+
+input:focus {
+  border: 1px dashed var(--color-green);
+  outline: none;
 }
 
 button {
   padding: 0.5rem 1rem;
   margin: 0rem 0.125rem;
+  min-height: 2.5rem;
   border: 1px dashed #69746180;
   border-radius: 0.5rem;
   cursor: pointer;
