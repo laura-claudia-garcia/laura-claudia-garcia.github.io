@@ -151,6 +151,10 @@ button:hover {
   color: var(--color-black);
 }
 
+.rich-text img {
+  width: 100%;
+}
+
 .back-button {
   border: none;
   background-color: var(--color-transparent);
