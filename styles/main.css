@@ -99,6 +99,19 @@ li {
   font-weight: 400;
 }
 
+pre {
+  margin-bottom: 2rem !important;
+  padding: 1rem important;
+  border-radius: 0.5rem important;
+}
+
+code {
+  padding: 0.25rem important;
+  background-color: var(--color-grey) important;
+  color: var(--color-text-black) important;
+  font-size: 0.875rem important;
+}
+
 input {
   background-color: var(--white);
   color: var(--color-green);
@@ -156,19 +169,6 @@ button:hover {
 .rich-text img {
   width: 100%;
   margin-bottom: 2rem;
-}
-
-.rich-text pre {
-  margin-bottom: 2rem !important;
-  padding: 1rem important;
-  border-radius: 0.5rem important;
-}
-
-.rich-text code {
-  padding: 0.25rem important;
-  background-color: var(--color-grey) important;
-  color: var(--color-text-black) important;
-  font-size: 0.875rem important;
 }
 
 .back-button {
