@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The DOM</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Laura Garcia's Developer blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="../assets/img/dom-template.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="icon" href="../assets/img/favicon.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navbar-component">
+      <div class="navbar-container container">
+        <img
+          class="navbar-logo"
+          src="../assets/img/logo.svg"
+          alt="laura garcia creative logo"
+        />
+        <ul class="navbar-links-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="../page/about.html">about</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="background-video-container"
+      data-video-urls="https://rayofhours.netlify.app/assets/shadow.mp4"
+      data-autoplay="true"
+      data-loop="true"
+      data-wf-ignore="true"
+    >
+      <video
+        class="background-video"
+        muted="true"
+        autoplay="true"
+        loop="true"
+        style="
+          background-image: url('https://rayofhours.netlify.app/assets/thumbnail.webp');
+        "
+        playsinline=""
+        data-wf-ignore="true"
+      >
+        <source
+          src="https://rayofhours.netlify.app/assets/shadow.mp4"
+          data-wf-ignore="true"
+        />
+      </video>
+    </div>
+    <section id="hero-section" class="section">
+      <div class="container blog-container">
+        <a class="back-button" href="../index.html"
+          ><img src="../assets/img/arrow-left.svg" alt="arrow icon" />back to
+          blog</a
+        >
+        <div class="blog-content rich-text">
+          <div class="blog-info margin-bottom-large">
+            <span class="blog-chip">2 min read</span>
+            <span class="blog-chip">16.11.2010</span>
+          </div>
+          <h1 class="blog-title margin-bottom-medium">
+            The DOM and how it connects HTML, CSS, and JavaScript
+          </h1>
+          <p>
+            Websites are created with three key building blocks: HTML, CSS and
+            Javascript. Those 3 languages have different roles and can interact
+            with each other. Let’s compare it to building a house.
+          </p>
+
+          <h2>HTML</h2>
+          <p>
+            HTML (Hypertext Markup Language) is the language we use to create
+            the base structure of a website, aka the foundations and walls of
+            your house. Without the foundations, your house wouldn’t work. With
+            just the foundations, your house would be able to stand and do its
+            basic job, but it would look pretty boring. That’s where CSS comes
+            in!
+          </p>
+
+          <h2>CSS</h2>
+          <p>
+            CSS (Cascading Stylesheet) is the coding language used to style the
+            HTML content, aka to make your house look pretty with paint,
+            furniture, and decorations! With CSS, you can target HTML elements
+            as well as classes and ids to change their visual appearance such as
+            the background colour, font colour, font size, position etc. You can
+            also add some very basic interactions (mousehover, focussed etc),
+            but nothing too complicated or exciting. Well, that’s where
+            Javascript comes in!
+          </p>
+
+          <h2>JavaScript</h2>
+          <p>
+            Javascript is a coding language used to add functionality to HTML.
+            This would be the electricity and plumbing which brings your house
+            to life. But Javascript doesn’t directly change HTML, it needs the
+            DOM to be able to interact with HTML content. But what’s the DOM you
+            ask?
+          </p>
+
+          <h2>The DOM</h2>
+          <p>
+            The DOM (Document Object Model) is not a programming language, it is
+            the representation of structures and content of web documents. It
+            could be seen as the map for your house, with the name of every
+            element in the house, that javascript can use to access, read,
+            write, modify and create HTML elements. Javascript does all of these
+            actions through methods, properties and events. This can be done
+            inline with <code>&lt;script&gt;</code> elements in the HTML file or
+            with a separate javascript file that is then linked in the HTML
+            <code>&lt;head&gt;</code>. <br />
+            <br />
+            Elements can be selected with Javascript via their class, ID, HTML
+            tag name or CSS selectors.
+          </p>
+
+          <img src="../assets/img/dom-visual.png" />
+          <p>For Example:</p>
+          <pre><code>&lt;h1 class="blogHeader"&gt;My Old Title&lt;/h1&gt;
+
+&lt;script&gt;
+document.querySelector(".blogHeader").innerHTML = "My New Title";
+&lt;/script&gt;
+</code></pre>
+
+          <p>
+            This code tells the Javascript to find the heading with the class
+            <code>blogHeader</code> in the DOM, and replace its text.
+          </p>
+
+          <h2>Arrays vs Objects</h2>
+          <p>
+            Now let’s have a look at ways to group data. Both arrays and objects
+            are used to store groups of data, but they are organised
+            differently.
+          </p>
+          <p>
+            An array is an ordered collection of values, like a shopping list,
+            except we start counting from 0 instead of 1. You access the value
+            with their position in the list. The values can be of any type
+            (number, string, boolean, arrays, objects). Values can be added,
+            removed and updated in an array with different methods. The number
+            of values in an array can be checked with the
+            <code>.length</code> method.
+          </p>
+
+          <pre><code>// Our shopping list would be written like such:
+let shoppingList = ["banana", "apple", "cucumber", "hummus"];
+
+// Access the first value of the array:
+console.log(shoppingList[0]); // banana
+
+// Check the number of items in the shopping list:
+console.log(shoppingList.length); // 4
+</code></pre>
+
+          <p>
+            An object is also a collection of values but each item has a key and
+            a value, similarly to a dictionary. The key is the identifier, and
+            the value is the data stored. Contrary to arrays, you access the
+            object data by calling a key. Just like an array, an object can be
+            added, modified or removed.
+          </p>
+
+          <pre><code>// Let’s image we have a medical file about someone:
+const patientOne = {
+  name: "Laura",
+  age: 27,
+  allergies: ["cats", "dogs", "pollen"],
+  address: { 
+    street: "33 Cuba street", 
+    neighborhood: "Te Aro", 
+    city: "Wellington"
+  }
+};
+
+// check the name of patient one:
+console.log(patientOne.name); 
+</code></pre>
+
+          <h2>Control Flow</h2>
+          <p>
+            Control flow is the order in which the code is happening. Javascript
+            executes its code from top to bottom by default, similar to a
+            recipe. But sometimes you might need to modify the flow to make
+            decisions, repeat actions, and jump to other parts of the code based
+            on set criteria. That’s where conditional statements, loops and
+            functions come in.
+          </p>
+
+          <h3>Conditional Statements</h3>
+          <p>Conditional statements execute when a condition is met.</p>
+          <p>
+            Let’s take doing the laundry as an example. The clothes can either
+            be dry or not. If the clothes are dry, then I will put them away,
+            otherwise I will let them dry.
+          </p>
+          <p>In javascript it would be translated to an if statement:</p>
+
+          <pre><code>let clothesDry = false;
+
+if (clothesDry) {
+  console.log("Fold and put them away!");
+} else {
+  console.log("Hang them back up to dry.");
+}
+</code></pre>
+
+          <h3>Loops</h3>
+          <p>
+            Loops repeat a block of code until a condition is no longer met.
+          </p>
+          <p>
+            Let’s take washing the dishes as an example. There are a few dirty
+            things such as pots and pans, that we will group together as the
+            “dishes”. I need to keep doing the dishes until the last item is
+            clean.
+          </p>
+          <p>In javascript this would translate to:</p>
+
+          <pre><code>// group the dishes into an array:
+let dirtyDishes = ["pot", "pan", "plate", "cutlery", "glass"];
+
+// go through the dishes one by one until there are no more dishes:
+for (let i = 0; i &lt; dirtyDishes.length; i++) {
+  console.log(dirtyDishes[i] + " is clean!");
+}
+</code></pre>
+
+          <h3>Functions</h3>
+          <p>
+            Functions are reusable blocks of code, similar to a reusable recipe.
+            They are extremely helpful to avoid repeating yourself.
+          </p>
+          <p>
+            If we take our previous example of doing the dishes, we could turn
+            it into a repeatable action (function) that we can reuse whenever
+            there are dishes to do.
+          </p>
+
+          <pre><code>// create the function:
+function cleanDishes(dishes) {
+  for (let i = 0; i &lt; dishes.length; i++) {
+    console.log(dishes[i] + " is clean!");
+  }
+}
+
+// group of dirty dishes:
+let dirtyDishes = ["pot", "pan", "plate"];
+
+// clean the dirty dishes:
+cleanDishes(dirtyDishes);
+</code></pre>
+
+          <h2>Conclusion</h2>
+          <p>
+            HTML is used to build the skeleton, CSS dresses it up, JavaScript
+            makes it functional, and the DOM is the translator that lets
+            javascript communicate with HTML.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <p>&copy; 2025 Laura Garcia Creative. All rights reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>
