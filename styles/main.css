@@ -100,7 +100,6 @@ li {
 }
 
 pre {
-  margin-bottom: 2rem !important;
   padding: 1rem;
   border-radius: 0.5rem;
 }
@@ -169,6 +168,10 @@ button:hover {
 .rich-text img {
   width: 100%;
   margin-bottom: 2rem;
+}
+
+.rich-text pre {
+  margin-bottom: 2rem !important;
 }
 
 .back-button {
