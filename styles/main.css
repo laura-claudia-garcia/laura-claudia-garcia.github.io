@@ -101,15 +101,15 @@ li {
 
 pre {
   margin-bottom: 2rem !important;
-  padding: 1rem important;
-  border-radius: 0.5rem important;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 code {
-  padding: 0.25rem important;
-  background-color: var(--color-grey) important;
-  color: var(--color-text-black) important;
-  font-size: 0.875rem important;
+  padding: 0.25rem;
+  background-color: var(--color-grey);
+  color: var(--color-text-black);
+  font-size: 0.875rem;
 }
 
 input {
