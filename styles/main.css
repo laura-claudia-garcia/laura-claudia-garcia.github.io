@@ -112,7 +112,6 @@ code {
   background-color: var(--color-grey);
   color: var(--color-text-black);
   font-size: 0.875rem;
-  max-width: 100% !important;
 }
 
 input {
@@ -171,7 +170,6 @@ button:hover {
 
 .rich-text img {
   width: 100%;
-  max-width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -377,12 +375,6 @@ button:hover {
 
   h2 {
     font-size: 1.75rem;
-    letter-spacing: 0.015em;
-    font-weight: 400;
-  }
-
-  p {
-    font-size: 0.875rem;
   }
 
   li {
