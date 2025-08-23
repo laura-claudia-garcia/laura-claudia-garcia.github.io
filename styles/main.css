@@ -421,12 +421,6 @@ button:hover {
     font-size: 3.5rem;
   }
 
-  h2 {
-    font-size: 1.125rem;
-    letter-spacing: 0.015em;
-    font-weight: 400;
-  }
-
   .section {
     padding: 2rem 1.5rem;
   }
@@ -461,12 +455,6 @@ button:hover {
 @media only screen and (max-width: 480px) {
   h1 {
     font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.125rem;
-    letter-spacing: 0.015em;
-    font-weight: 400;
   }
 
   .navbar-container {
