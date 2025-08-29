@@ -177,6 +177,16 @@ button:hover {
   margin-bottom: 2rem !important;
 }
 
+.rich-text ul {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.rich-text li {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
 .back-button {
   border: none;
   background-color: var(--color-transparent);
