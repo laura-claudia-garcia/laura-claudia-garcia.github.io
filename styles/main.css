@@ -105,6 +105,7 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-x: auto;
+  background-color: var(--color-grey);
 }
 
 code {
