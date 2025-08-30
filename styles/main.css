@@ -219,6 +219,14 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar-main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -232,6 +240,12 @@ button:hover {
 .navbar-link {
   padding: 1rem 0.5rem;
   font-family: Sigurd, 'Times New Roman', serif;
+}
+
+.navbar-icon {
+  padding: 0.75rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .section {
@@ -465,6 +479,10 @@ button:hover {
 
   .navbar-link {
     padding: 0.5rem 0.25rem;
+  }
+
+  .navbar-social-wrapper {
+    visibility: hidden;
   }
 
   .blog-grid {
