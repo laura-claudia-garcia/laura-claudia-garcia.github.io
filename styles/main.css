@@ -275,6 +275,10 @@ button:hover {
   position: relative;
 }
 
+.no-margin {
+  margin: 0px !important;
+}
+
 .margin-bottom-large {
   margin-bottom: 2.5rem;
 }
@@ -333,6 +337,21 @@ button:hover {
 
 .blog-paragraph {
   margin-bottom: 1rem;
+}
+
+.blog-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-author-image {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  object-fit: cover;
+  border-radius: 100vw;
+  margin-bottom: 0px !important;
 }
 
 .background-video-container {
