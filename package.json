@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/laura-claudia-garcia/laura-claudia-garcia.github.io/issues"
   },
-  "homepage": "https://github.com/laura-claudia-garcia/laura-claudia-garcia.github.io#readme"
+  "homepage": "https://github.com/laura-claudia-garcia/laura-claudia-garcia.github.io#readme",
+  "devDependencies": {
+    "vite": "^8.0.0"
+  }
 }
